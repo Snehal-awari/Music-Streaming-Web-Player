@@ -1,0 +1,259 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.home{
+    width:"35px" ;
+    height:"35px";
+    border-radius: 50%;
+}
+input{
+    background-color: rgb(42, 41, 41);
+    padding: 10px;
+}
+.search{
+    background-color: rgb(42, 41, 41);
+    border-radius: 10px;
+}
+
+input{
+    color: white;
+}
+
+.head{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    position: fixed;
+    display: flex;
+    gap: 20px;
+}
+.top-right{
+    margin-left: 600px;
+    word-spacing: 10px;
+    color: rgb(177, 171, 171);
+}
+
+.bottom{
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  font-size: 12px;
+  padding: 9px;
+}
+
+.middle{
+    display: flex;
+}
+
+.middle .left{
+     position: fixed;
+    height: 900px;
+    width: 29.5%;
+    background-color: rgb(25, 21, 21);
+    color:white;
+    margin-top: 60px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.right{
+    position: fixed;
+    left: 30%;
+    top: 60px;
+    height: calc(100vh - 110px);
+    width: calc(100% - 485px);
+    padding: 20px 40px;
+    background-color: rgb(25, 21, 21);
+    border-radius: 10px;
+   /* height: calc(100vh - 110px);  yamule problem hot ahe*/  
+
+    overflow-y: auto;   /* ONLY vertical */
+    overflow-x: hidden; /* STOP horizontal */
+    color:white;
+}
+.library{
+    font-weight: bold;
+    padding: 16px 16px 8px;
+}
+.create{
+    font-weight: bold;
+    padding: 8px 16px;
+  border-radius: 50px;
+  justify-content: right;
+  align-items: right;
+}
+.leftboth{
+    height: 400px;
+    background-color:rgb(25, 21, 21);
+    color:white;
+    margin:10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.one,.two{
+    background-color: rgb(42, 41, 41);
+    padding: 16px 20px;
+    margin: 8px 0px;
+    height: 40%;
+    line-height: 30px;
+    border-radius: 10px;
+}
+.one{
+    margin-bottom: 10px;
+}
+.playlist{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.easy{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.rightfooter{
+    height: 400px;
+    background-color:rgb(25, 21, 21);
+    padding:  30px;
+    padding-top: 10px;
+
+
+   font-family:serif;
+   font-size: 12px;
+   color: rgb(140, 137, 137);
+   word-spacing: 10px;
+   line-height: 20px;
+}
+.cookies{
+    color: white;
+    font-family:cursive;
+    font-size: 15px;
+}
+.cookies:hover{
+    text-decoration: underline;
+}
+button:hover{
+   font-size: small;
+}
+
+.songs{
+    margin-bottom: 30px;
+}
+.container{
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+.container::-webkit-scrollbar{
+    display: none;              /* Chrome/Edge */
+}
+.card{
+    width:180px ;
+    height: 265px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.card-img{
+    border-radius: 20px;
+    width:80%;
+    height:150px;
+    padding-left: 15px;
+    padding-top: 10px;
+
+}
+.card-img2{
+    border-radius: 50%;
+    width:80%;
+    height:150px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.card p{
+    font-size: 13px;
+    color: rgb(177, 171, 171);
+    padding-left: 15px;
+    padding-top: 10px;
+    word-wrap: break-word;
+    white-space: normal; 
+}
+.card h4{
+    padding-left: 15px;
+    word-wrap: break-word;
+    white-space: normal; 
+}
+.card:hover{
+    background-color: rgb(55, 44, 44);
+}
+.card h4:hover{
+  text-decoration: underline;
+}
+.card p:hover{
+    text-decoration: underline;
+}
+h2:hover{
+    text-decoration: underline;
+}
+
+.line{
+    margin-bottom: 50px;
+    padding-top: 50px;
+    height: 50x;
+    width: calc(145% - 485px);
+}
+.footer-text{
+    margin-bottom: 50px;
+    display:flex ;
+    gap: 70px;
+    color: rgb(177, 171, 171);
+    line-height: 35px;
+}
+.owner{
+    margin-bottom: 200px;
+    color: rgb(177, 171, 171);
+}
+
+@media (max-width: 768px){
+
+  .left{
+    display: none;   /* sidebar hide */
+  }
+
+  .right{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .top-right{
+    display: none;  /* top text hide */
+  }
+}
+
+.music-player{
+position: fixed;
+bottom: 60px;
+left:0;
+width:100%;
+background:#181818;
+color:white;
+padding:10px;
+display:flex;
+gap:20px;
+align-items:center;
+z-index:1000;
+}
